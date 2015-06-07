@@ -45,6 +45,7 @@ namespace TwentyFortyEight
         public static int[] processRow(int[] input)
         {
             var len = input.Length;
+            input = input.Where(x => x != 0).ToArray();
             for(var i = 0; i< input.Length -1; i++)
             {
                 if(input[i] !=  0 && input[i] == input[i+1])
@@ -55,11 +56,18 @@ namespace TwentyFortyEight
             }
             List<int> result = input.Where(x => x != 0).ToList<int>();
 
-            while (result.Count != input.Length)
+            while (result.Count != len)
             {
                 result.Insert(0, 0);
             }
             return result.ToArray();
+        }
+
+        public static int[] getColumn(int index)
+        {
+            int[] res = new int[gridsize];
+
+            return res;
         }
 
 
