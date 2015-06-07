@@ -1,8 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace TwentyFortyEight
 {
@@ -25,7 +23,7 @@ namespace TwentyFortyEight
 
         public static string processLine(string line)
         {
-            string[] values = line.Replace(" ", string.Empty).Split(';');
+            string[] values = line.Split(';');
             direction = values[0];
             gridsize = Convert.ToInt32(values[1]);
             board = new int[gridsize][];
@@ -34,7 +32,7 @@ namespace TwentyFortyEight
 
             for (var i = 0; i < gridLines.Length; i++)
             {
-                board[i] = Array.ConvertAll(gridLines[i].ToCharArray(), ch => (int)Char.GetNumericValue(ch));
+                board[i] = Array.ConvertAll(gridLines[i].Trim().Split(' '), numStr => Convert.ToInt32(numStr) );
             }
 
             switch (direction)
@@ -48,9 +46,9 @@ namespace TwentyFortyEight
                 case "LEFT":
                     for (var i = 0; i < board.Length; i++)
                     {
-                        board[i].Reverse();
+                        Array.Reverse(board[i]);
                         board[i] = processRow(board[i]);
-                        board[i].Reverse();
+                        Array.Reverse(board[i]);
                     }
                     break;
                 case "DOWN":
@@ -63,9 +61,9 @@ namespace TwentyFortyEight
                     for (var i = 0; i < board.Length; i++)
                     {
                         int[] col = getColumn(i);
-                        col.Reverse();
+                        Array.Reverse(col);
                         col = processRow(col);
-                        col.Reverse();
+                        Array.Reverse(col);
                         writeColumn(col, i);
                     }
                     break;
@@ -87,6 +85,7 @@ namespace TwentyFortyEight
                 {
                     input[i + 1] += input[i];
                     input[i] = 0;
+                    i += 1; 
                 }
             }
             List<int> result = input.Where(x => x != 0).ToList<int>();
