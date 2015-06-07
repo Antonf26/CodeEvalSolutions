@@ -18,7 +18,6 @@ namespace TwentyFortyEight
             {
                 Console.WriteLine(processLine(line));
             }
-            Console.ReadLine();
         }
 
         public static string processLine(string line)
@@ -114,9 +113,5 @@ namespace TwentyFortyEight
                 board[i][index] = column[i];
             }
         }
-
-
-
-
     }
 }
