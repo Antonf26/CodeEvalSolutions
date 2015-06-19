@@ -4,11 +4,11 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{AD2066B1-7A89-44B0-BDE1-B08482B8A024}</ProjectGuid>
+    <ProjectGuid>{9C3D1067-CDBE-4D7F-8491-BC3505AA6C18}</ProjectGuid>
     <OutputType>Exe</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>TwentyFortyEight</RootNamespace>
-    <AssemblyName>TwentyFortyEight</AssemblyName>
+    <RootNamespace>MthToLastElement</RootNamespace>
+    <AssemblyName>MthToLastElement</AssemblyName>
     <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
   </PropertyGroup>

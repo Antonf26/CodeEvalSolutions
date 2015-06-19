@@ -1,0 +1,6 @@
+﻿a b c d 4
+e f g h 2
+a d f h 1
+r f j h 5
+1 2 3 4 3
+a b c d e f g h i j k l m n o 10

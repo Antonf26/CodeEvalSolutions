@@ -35,8 +35,24 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="nunit.core">
+      <HintPath>..\packages\NUnitTestAdapter.2.0.0\lib\nunit.core.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="nunit.core.interfaces">
+      <HintPath>..\packages\NUnitTestAdapter.2.0.0\lib\nunit.core.interfaces.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
     <Reference Include="nunit.framework">
       <HintPath>..\packages\NUnit.2.6.4\lib\nunit.framework.dll</HintPath>
+    </Reference>
+    <Reference Include="nunit.util">
+      <HintPath>..\packages\NUnitTestAdapter.2.0.0\lib\nunit.util.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="NUnit.VisualStudio.TestAdapter">
+      <HintPath>..\packages\NUnitTestAdapter.2.0.0\lib\NUnit.VisualStudio.TestAdapter.dll</HintPath>
+      <Private>False</Private>
     </Reference>
     <Reference Include="System" />
   </ItemGroup>
@@ -54,16 +70,22 @@
   </Choose>
   <ItemGroup>
     <Compile Include="2048Test.cs" />
+    <Compile Include="ColumnNamerTest.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SumOfIntegersTest.cs" />
     <Compile Include="SwapNumberTest.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\SwapNumbers\SwapNumbers.csproj">
-      <Project>{4bbe43a2-f814-4868-9462-f9a01cf0b8ec}</Project>
-      <Name>SwapNumbers</Name>
+    <ProjectReference Include="..\ExcelColumnNames\ExcelColumnNames.csproj">
+      <Project>{c93ffd7d-d0bb-4344-87ac-5e459a7df8ca}</Project>
+      <Name>ExcelColumnNames</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\SumOfIntegers\SumOfIntegers.csproj">
+      <Project>{9eeae442-ea14-4c44-a739-6a98ba0183a1}</Project>
+      <Name>SumOfIntegers</Name>
     </ProjectReference>
     <ProjectReference Include="..\TwentyFortyEight\TwentyFortyEight.csproj">
       <Project>{ad2066b1-7a89-44b0-bde1-b08482b8a024}</Project>
