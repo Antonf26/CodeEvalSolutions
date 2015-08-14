@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 2013
-VisualStudioVersion = 12.0.40629.0
+# Visual Studio 14
+VisualStudioVersion = 14.0.23107.0
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FizzBuzz", "CodeEval\FizzBuzz.csproj", "{023F088A-E167-4872-9F74-D9244292867D}"
 EndProject
@@ -43,6 +43,14 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PascalsTriangle", "PascalsTriangle\PascalsTriangle.csproj", "{D722D66C-18A1-4219-A0B9-80315F70E108}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TrailingString", "TrailingString\TrailingString.csproj", "{A5A72893-DBC5-4EAC-9D0C-E6AC77B4CE7A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CashRegister", "CashRegister\CashRegister.csproj", "{D746FE8A-0263-4932-A25A-DF88BE07812B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Endianness", "Endianness\Endianness.csproj", "{8E1E4FCA-1B43-4337-B564-EB743B9B7126}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "JollyJumpers", "JollyJumpers\JollyJumpers.csproj", "{1BA0D7D1-A1F5-4D9A-A1E9-62484D11C7D0}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Pangrams", "Pangrams\Pangrams.csproj", "{BF300CAA-CA75-4BE1-AD97-CEE8D2C3BC64}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -122,6 +130,22 @@ Global
 		{A5A72893-DBC5-4EAC-9D0C-E6AC77B4CE7A}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A5A72893-DBC5-4EAC-9D0C-E6AC77B4CE7A}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A5A72893-DBC5-4EAC-9D0C-E6AC77B4CE7A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D746FE8A-0263-4932-A25A-DF88BE07812B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D746FE8A-0263-4932-A25A-DF88BE07812B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D746FE8A-0263-4932-A25A-DF88BE07812B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D746FE8A-0263-4932-A25A-DF88BE07812B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8E1E4FCA-1B43-4337-B564-EB743B9B7126}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8E1E4FCA-1B43-4337-B564-EB743B9B7126}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8E1E4FCA-1B43-4337-B564-EB743B9B7126}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8E1E4FCA-1B43-4337-B564-EB743B9B7126}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1BA0D7D1-A1F5-4D9A-A1E9-62484D11C7D0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1BA0D7D1-A1F5-4D9A-A1E9-62484D11C7D0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1BA0D7D1-A1F5-4D9A-A1E9-62484D11C7D0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1BA0D7D1-A1F5-4D9A-A1E9-62484D11C7D0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BF300CAA-CA75-4BE1-AD97-CEE8D2C3BC64}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BF300CAA-CA75-4BE1-AD97-CEE8D2C3BC64}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BF300CAA-CA75-4BE1-AD97-CEE8D2C3BC64}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BF300CAA-CA75-4BE1-AD97-CEE8D2C3BC64}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
